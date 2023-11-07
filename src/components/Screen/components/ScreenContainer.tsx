@@ -8,12 +8,14 @@ interface Props {
 
 export function ScrollViewContainer({children, backgroundColor}: Props) {
   return (
-    <ScrollView style={{backgroundColor}} keyboardShouldPersistTaps="handled">
+    <ScrollView
+      style={{backgroundColor, flex: 1}}
+      keyboardShouldPersistTaps="handled">
       {children}
     </ScrollView>
   );
 }
 
 export function ViewContainer({children, backgroundColor}: Props) {
-  return <View style={{backgroundColor}}>{children}</View>;
+  return <View style={{backgroundColor, flex: 1}}>{children}</View>;
 }
