@@ -23,7 +23,7 @@ type ScreenProps = NativeStackScreenProps<
 export function ForgotPasswordScreen({navigation}: ScreenProps) {
   const {reset} = useResetNavigationSuccess();
 
-  const {control, handleSubmit} = useForm<ForgotPasswordSchema>({
+  const {control, formState, handleSubmit} = useForm<ForgotPasswordSchema>({
     resolver: zodResolver(forgotPasswordSchema),
     defaultValues: {
       email: '',
@@ -61,7 +61,11 @@ export function ForgotPasswordScreen({navigation}: ScreenProps) {
         boxProps={{mb: 's48'}}
       />
 
-      <Button title="Recuperar senha" onPress={handleSubmit(SubmitForm)} />
+      <Button
+        title="Recuperar senha"
+        onPress={handleSubmit(SubmitForm)}
+        disabled={!formState.isValid}
+      />
     </Screen>
   );
 }
