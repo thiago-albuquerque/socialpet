@@ -1,8 +1,6 @@
 import React from 'react';
-import {EyeOnIcon} from '../../assets/icons/EyeOnIcon';
-import {EyeOffIcon} from '../../assets/icons/EyeOffIcon';
-import {ThemeColors} from '../../theme/theme';
-import {UseAppTheme} from '../../hooks/useAppTheme';
+import {Pressable} from 'react-native';
+
 import {ArrowLeftIcon} from '../../assets/icons/ArrowLeftIcon';
 import {ArrowRightIcon} from '../../assets/icons/ArrowRight';
 import {BellIcon} from '../../assets/icons/BellIcon';
@@ -16,6 +14,8 @@ import {CheckIcon} from '../../assets/icons/CheckIcon';
 import {CheckRoundIcon} from '../../assets/icons/CheckRoundIcon';
 import {ChevronRightIcon} from '../../assets/icons/ChevronRightIcon';
 import {CommentIcon} from '../../assets/icons/CommentIcon';
+import {EyeOffIcon} from '../../assets/icons/EyeOffIcon';
+import {EyeOnIcon} from '../../assets/icons/EyeOnIcon';
 import {FlashOffIcon} from '../../assets/icons/FlashOffIcon';
 import {FlashOnIcon} from '../../assets/icons/FlashOnIcon';
 import {HeartFillIcon} from '../../assets/icons/HeartFillIcon';
@@ -24,13 +24,14 @@ import {HomeFillIcon} from '../../assets/icons/HomeFillIcon';
 import {HomeIcon} from '../../assets/icons/HomeIcon';
 import {MessageIcon} from '../../assets/icons/MessageIcon';
 import {MessageRoundIcon} from '../../assets/icons/MessageRoundIcon';
+import {NewPostIcon} from '../../assets/icons/NewPostIcon';
 import {ProfileFillIcon} from '../../assets/icons/ProfileFillIcon';
 import {ProfileIcon} from '../../assets/icons/ProfileIcon';
 import {SearchIcon} from '../../assets/icons/SearchIcon';
 import {SettingsIcon} from '../../assets/icons/SettingsIcon';
 import {TrashIcon} from '../../assets/icons/TrashIcon';
-import {NewPostIcon} from '../../assets/icons/NewPostIcon';
-import {Pressable} from 'react-native';
+import {UseAppTheme} from '../../hooks/useAppTheme';
+import {ThemeColors} from '../../theme/theme';
 
 export interface IconBase {
   size?: number;

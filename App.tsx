@@ -1,8 +1,10 @@
 import React from 'react';
+
 import {ThemeProvider} from '@shopify/restyle';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
-import {theme} from './src/theme/theme';
+
 import {Routes} from './src/routes/Routes';
+import {theme} from './src/theme/theme';
 
 export default function App() {
   return (
